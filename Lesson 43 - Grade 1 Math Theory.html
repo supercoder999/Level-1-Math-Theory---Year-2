@@ -1,75 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grade 1 Math – 90 Minute Test (Lesson 43)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 43 – Grade 1 Math Theory</title>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 32px 24px;
-      color: #1a1a2e;
-      font-size: 15px;
-      line-height: 1.7;
+      max-width: 880px; margin: 0 auto;
+      padding: 32px 24px; color: #1a1a2e;
+      font-size: 15px; line-height: 1.75;
     }
-    h1 { text-align:center; font-size:1.55em; color:#0d4f8c; margin-bottom:4px; }
+    h1 { text-align:center; font-size:1.55em; color:#14532d; margin-bottom:4px; }
     .meta { text-align:center; color:#555; margin-bottom:28px; font-size:.97em; }
     .section-header {
-      background:#e8f0fb; border-left:5px solid #0d4f8c;
+      background:#e8f5e9; border-left:5px solid #14532d;
       padding:7px 14px; margin:28px 0 14px 0;
-      font-weight:bold; font-size:1.05em; color:#0d4f8c;
+      font-weight:bold; font-size:1.05em; color:#14532d;
       border-radius:0 6px 6px 0;
     }
-    .question { margin:10px 0 10px 18px; }
-    .blank {
-      display:inline-block; min-width:48px;
-      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
-    }
-    .wide-blank {
-      display:inline-block; min-width:140px;
-      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
-    }
-    .visual-row {
-      display:flex; gap:40px; flex-wrap:wrap;
-      align-items:flex-start; margin:12px 0 12px 18px;
-    }
-    .visual-item { text-align:center; font-size:.9em; color:#444; }
-    .visual-item svg { display:block; margin:0 auto 6px auto; }
-    /* Multiple choice */
-    .mc-options { display:flex; gap:18px; flex-wrap:wrap; margin:5px 0 3px 0; }
-    .mc-opt { padding:3px 12px; border:1.5px solid #bcd; border-radius:4px; background:#f7f9ff; }
-    /* True / False */
-    .tf-row { display:inline-flex; gap:18px; margin-left:10px; }
-    .tf-opt { padding:2px 12px; border:1.5px solid #bcd; border-radius:4px; background:#f7f9ff; }
-    /* Matching */
-    .match-instructions { margin:2px 0 8px 18px; color:#555; font-size:.93em; }
-    .matching { display:flex; gap:50px; margin:8px 0 10px 18px; flex-wrap:wrap; }
-    .match-col { display:flex; flex-direction:column; gap:8px; }
-    .match-item {
-      padding:5px 14px; border:1.5px solid #bcd; border-radius:6px;
-      background:#f7f9ff; min-width:100px; text-align:center;
-    }
-    .match-blank {
-      display:inline-block; min-width:26px;
-      border-bottom:2px solid #333; margin-right:6px; vertical-align:bottom;
-    }
-    /* Dot picture */
-    .dot-picture { margin:6px 0 4px 18px; }
-    /* Answer key */
-    table.answer-key {
-      border-collapse:collapse; width:100%;
-      margin-top:12px; font-size:.93em;
-    }
-    table.answer-key th {
-      background:#0d4f8c; color:#fff;
-      padding:7px 12px; text-align:center;
-    }
-    table.answer-key td {
-      border:1px solid #bcd; padding:6px 12px; text-align:center;
-    }
-    table.answer-key tr:nth-child(even) td { background:#f0f5ff; }
     .bonus {
       background:#fff8e1; border-left:5px solid #f9a825;
       padding:7px 14px; margin:28px 0 14px 0;
@@ -82,71 +31,126 @@
       font-weight:bold; font-size:1.05em; color:#2e7d32;
       border-radius:0 6px 6px 0;
     }
-    hr { border:none; border-top:1px solid #dce3ef; margin:32px 0; }
+    .question { margin:10px 0 10px 18px; }
+    .blank {
+      display:inline-block; min-width:54px;
+      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
+    }
+    .wide-blank {
+      display:inline-block; min-width:160px;
+      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
+    }
+    .mc-options { display:flex; gap:18px; flex-wrap:wrap; margin:5px 0 3px 0; }
+    .mc-opt { padding:3px 14px; border:1.5px solid #a5d6a7; border-radius:4px; background:#f1f8f2; }
+    .tf-row { display:inline-flex; gap:18px; margin-left:10px; }
+    .tf-opt { padding:2px 12px; border:1.5px solid #a5d6a7; border-radius:4px; background:#f1f8f2; }
+    .match-instructions { margin:2px 0 8px 18px; color:#555; font-size:.93em; }
+    .matching { display:flex; gap:50px; margin:8px 0 10px 18px; flex-wrap:wrap; }
+    .match-col { display:flex; flex-direction:column; gap:8px; }
+    .match-item {
+      padding:5px 14px; border:1.5px solid #a5d6a7; border-radius:6px;
+      background:#f1f8f2; min-width:110px; text-align:center;
+    }
+    .match-blank {
+      display:inline-block; min-width:26px;
+      border-bottom:2px solid #333; margin-right:6px; vertical-align:bottom;
+    }
+    table.answer-key {
+      border-collapse:collapse; width:100%;
+      margin-top:12px; font-size:.93em;
+    }
+    table.answer-key th {
+      background:#14532d; color:#fff;
+      padding:7px 12px; text-align:center;
+    }
+    table.answer-key td {
+      border:1px solid #a5d6a7; padding:6px 12px; text-align:center;
+    }
+    table.answer-key tr:nth-child(even) td { background:#f0faf2; }
+    hr { border:none; border-top:1px solid #c8e6c9; margin:32px 0; }
     .name-line { display:flex; gap:32px; margin-bottom:20px; font-size:.97em; }
     .name-line span { white-space:nowrap; }
     .name-line .line { flex:1; border-bottom:1.5px solid #333; min-width:100px; }
     ol.q-list { padding-left:22px; margin:0; }
-    ol.q-list li { margin:9px 0; }
+    ol.q-list li { margin:10px 0; }
     .answer-section { break-before:page; page-break-before:always; }
+    .diagram-wrap { margin: 14px 0 4px 18px; }
+    .diagram-caption { font-size:.87em; color:#666; font-style:italic; margin: 2px 0 10px 18px; }
     @media print { hr.before-answer { display:none; } }
 </style>
 </head>
 <body>
-<h1>🧠 Grade 1 Math – 90 Minute Test (Lesson 43)</h1>
-<div class="meta">Total: 40 points &nbsp;|&nbsp; Time: 90 minutes</div>
-<div class="name-line">
-  <span>Name:</span><span class="line"></span>
-  <span>Date:</span><span class="line"></span>
-</div>
-<div class="section-header">⏱ Section 1: Counting &amp; Number Recognition (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✅ True/False</small></div>
-<ol class="q-list"><li class="question"><strong>6</strong> is an even number. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question">The number after <strong>15</strong> is <strong>17</strong>. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>12</strong> is greater than <strong>11</strong>. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>9</strong> is an even number. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>13</strong> in words is "fourteen". &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li></ol>
-<div class="section-header">⏱ Section 2: Addition (15 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✏️ Fill-in</small></div>
-<ol class="q-list"><li class="question">10 + 6 = <span class="blank"></span></li><li class="question">29 + 7 = <span class="blank"></span></li><li class="question">6 + 2 = <span class="blank"></span></li><li class="question">28 + 11 = <span class="blank"></span></li><li class="question">42 + 6 = <span class="blank"></span></li><li class="question">Fill in the blank: 24 + <span class="blank"></span> = 39</li></ol>
-<div class="section-header">⏱ Section 3: Subtraction (15 mins) &nbsp;<small style="font-weight:normal;opacity:.8">🔘 Multiple Choice</small></div>
-<ol class="q-list"><li class="question">15 − 7 = ?<br><div class="mc-options"><span class="mc-opt">A) 9</span><span class="mc-opt">B) 8</span><span class="mc-opt">C) 12</span><span class="mc-opt">D) 4</span></div></li><li class="question">34 − 20 = ?<br><div class="mc-options"><span class="mc-opt">A) 13</span><span class="mc-opt">B) 14</span><span class="mc-opt">C) 17</span><span class="mc-opt">D) 11</span></div></li><li class="question">12 − 10 = ?<br><div class="mc-options"><span class="mc-opt">A) 2</span><span class="mc-opt">B) 1</span><span class="mc-opt">C) 5</span><span class="mc-opt">D) 3</span></div></li><li class="question">16 − 12 = ?<br><div class="mc-options"><span class="mc-opt">A) 3</span><span class="mc-opt">B) 4</span><span class="mc-opt">C) 5</span><span class="mc-opt">D) 2</span></div></li><li class="question">50 − 28 = ?<br><div class="mc-options"><span class="mc-opt">A) 22</span><span class="mc-opt">B) 21</span><span class="mc-opt">C) 26</span><span class="mc-opt">D) 18</span></div></li><li class="question">Fill in the blank: 29 − <span class="blank"></span> = 22</li></ol>
-<div class="section-header">⏱ Section 4: Comparing Numbers &amp; Order (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✅ True/False</small></div>
-<ol class="q-list"><li class="question"><strong>4</strong> is an even number. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>11</strong> &lt; <strong>12</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>15</strong> &gt; <strong>28</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>18</strong> &lt; <strong>10</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question"><strong>15</strong> &gt; <strong>10</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li></ol>
-<div class="section-header">⏱ Section 5: Word Problems (20 mins) &nbsp;<small style="font-weight:normal;opacity:.8">🔘 Multiple Choice</small></div>
-<ol class="q-list"><li class="question">There are <strong>4 children</strong> in the playground. <strong>1 go home</strong>. How many are left?<br><div class="mc-options"><span class="mc-opt">A) 4</span><span class="mc-opt">B) 1</span><span class="mc-opt">C) 2</span><span class="mc-opt">D) 3</span></div></li><li class="question">There are <strong>17 books</strong> on the shelf. <strong>14 are taken out</strong>. How many books remain?<br><div class="mc-options"><span class="mc-opt">A) 2</span><span class="mc-opt">B) 0</span><span class="mc-opt">C) 3</span><span class="mc-opt">D) 4</span></div></li><li class="question">Nam sees <strong>38 cats</strong> and <strong>5 dogs</strong> in the park. How many animals in total?<br><div class="mc-options"><span class="mc-opt">A) 42</span><span class="mc-opt">B) 40</span><span class="mc-opt">C) 44</span><span class="mc-opt">D) 43</span></div></li><li class="question">There are <strong>18 butterflies</strong>. <strong>5 fly away</strong>. How many stay?<br><div class="mc-options"><span class="mc-opt">A) 12</span><span class="mc-opt">B) 10</span><span class="mc-opt">C) 13</span><span class="mc-opt">D) 16</span></div></li><li class="question">A class has <strong>38 boys</strong> and <strong>18 girls</strong>. How many students in total?<br><div class="mc-options"><span class="mc-opt">A) 56</span><span class="mc-opt">B) 53</span><span class="mc-opt">C) 59</span><span class="mc-opt">D) 58</span></div></li></ol>
-<div class="section-header">⏱ Section 6: Place Value (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✏️ Fill-in</small></div>
-<ol class="q-list"><li class="question"><strong>46</strong> = <span class="blank"></span> tens and <span class="blank"></span> ones</li><li class="question"><strong>76</strong> = <span class="blank"></span> tens and <span class="blank"></span> ones</li><li class="question"><strong>25</strong> = <span class="blank"></span> tens and <span class="blank"></span> ones</li><li class="question"><strong>7 tens</strong> and <strong>5 ones</strong> = <span class="blank"></span></li><li class="question"><strong>1 tens</strong> and <strong>3 ones</strong> = <span class="blank"></span></li></ol>
-<div class="section-header">⏱ Section 7: Number Patterns (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">🔘 Multiple Choice</small></div>
-<ol class="q-list"><li class="question">What comes next?&nbsp; 1, 6, 11, 16, 21, ___<br><div class="mc-options"><span class="mc-opt">A) 32</span><span class="mc-opt">B) 29</span><span class="mc-opt">C) 26</span><span class="mc-opt">D) 20</span></div></li><li class="question">What comes next?&nbsp; 3, 6, 9, 12, 15, ___<br><div class="mc-options"><span class="mc-opt">A) 20</span><span class="mc-opt">B) 22</span><span class="mc-opt">C) 16</span><span class="mc-opt">D) 18</span></div></li><li class="question">What comes next?&nbsp; 4, 5, 6, 7, 8, ___<br><div class="mc-options"><span class="mc-opt">A) 10</span><span class="mc-opt">B) 9</span><span class="mc-opt">C) 11</span><span class="mc-opt">D) 8</span></div></li><li class="question">What comes next?&nbsp; 8, 10, 12, 14, 16, ___<br><div class="mc-options"><span class="mc-opt">A) 21</span><span class="mc-opt">B) 18</span><span class="mc-opt">C) 17</span><span class="mc-opt">D) 19</span></div></li><li class="question">What comes next?&nbsp; 8, 10, 12, 14, 16, ___<br><div class="mc-options"><span class="mc-opt">A) 18</span><span class="mc-opt">B) 16</span><span class="mc-opt">C) 21</span><span class="mc-opt">D) 20</span></div></li></ol>
-<div class="bonus">⏱ Bonus Challenge (5 mins)</div>
-<ol class="q-list">
-  <li class="question">29 + 21 − 14 = <span class='blank'></span></li>
-  <li class="question">Tuan has <strong>7</strong> stickers. Gives <strong>5</strong> to a friend, then receives <strong>6</strong> from his sister. How many does he have now? <span class='blank'></span></li>
-  <li class="question">Fill in the blank: 5, 7, 9, ___, 13, 15 <span class='blank'></span></li>
-</ol>
-<hr class="before-answer"/>
+  <h1>🧠 Grade 1 Math Theory – Lesson 43</h1>
+  <div class="meta">Subtracting Tens | 90-Minute Lesson &nbsp;|&nbsp; Level: Year 1</div>
+  <div class="name-line">
+    <span>Name:</span><span class="line"></span>
+    <span>Date:</span><span class="line"></span>
+  </div>
+  <hr>
+<div class="section-header">⏱ Section 1: Subtracting Tens (15 mins)</div>
+<ol class="q-list"><li class="question">28 + 11 = <span class="blank"></span><br><div class="diagram-wrap"><svg width="280" height="110" viewBox="0 0 280 110" font-family="'Segoe UI',Arial,sans-serif"><rect x="60" y="8" width="160" height="40" rx="6" fill="#14532d"/><text x="140" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">?</text><rect x="20" y="62" width="110" height="38" rx="6" fill="#e3f2fd" stroke="#0d47a1" stroke-width="2"/><text x="75" y="87" text-anchor="middle" fill="#0d47a1" font-size="15" font-weight="bold">28</text><rect x="150" y="62" width="110" height="38" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/><text x="205" y="87" text-anchor="middle" fill="#7a5c00" font-size="15" font-weight="bold">11</text></svg></div><div class="diagram-caption">Part–whole</div></li><li class="question">32 − 10 = <span class="blank"></span></li><li class="question">30 + 10 = <span class="blank"></span></li><li class="question">24 + 20 = ?<div class="mc-options"><span class="mc-opt">A) 37</span><span class="mc-opt">B) 41</span><span class="mc-opt">C) 51</span><span class="mc-opt">D) 44</span></div></li><li class="question">A coin shows <strong>50</strong>. Write the value: <span class="blank"></span></li></ol>
+<div class="section-header">⏱ Section 2: Subtracting Tens — Practice (15 mins)</div>
+<ol class="q-list"><li class="question">34 + 13 = <span class="blank"></span><br><div class="diagram-wrap"><svg width="280" height="110" viewBox="0 0 280 110" font-family="'Segoe UI',Arial,sans-serif"><rect x="60" y="8" width="160" height="40" rx="6" fill="#14532d"/><text x="140" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">?</text><rect x="20" y="62" width="110" height="38" rx="6" fill="#fffde7" stroke="#f57f17" stroke-width="2"/><text x="75" y="87" text-anchor="middle" fill="#f57f17" font-size="15" font-weight="bold">34</text><rect x="150" y="62" width="110" height="38" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/><text x="205" y="87" text-anchor="middle" fill="#7a5c00" font-size="15" font-weight="bold">13</text></svg></div><div class="diagram-caption">Part–whole</div></li><li class="question">37 − 17 = <span class="blank"></span></li><li class="question">70 + 10 = <span class="blank"></span></li><li class="question">28 + 16 = ?<div class="mc-options"><span class="mc-opt">A) 44</span><span class="mc-opt">B) 37</span><span class="mc-opt">C) 42</span><span class="mc-opt">D) 51</span></div></li><li class="question">A coin shows <strong>20</strong>. Write the value: <span class="blank"></span></li></ol>
+<div class="section-header">⏱ Section 3: Addition &amp; Subtraction (15 mins)</div>
+<ol class="q-list"><li class="question">Find the missing part.<br><div class="diagram-wrap"><svg width="280" height="110" viewBox="0 0 280 110" font-family="'Segoe UI',Arial,sans-serif"><rect x="60" y="8" width="160" height="40" rx="6" fill="#14532d"/><text x="140" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">6</text><rect x="20" y="62" width="110" height="38" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><text x="75" y="87" text-anchor="middle" fill="#e65100" font-size="15" font-weight="bold">4</text><rect x="150" y="62" width="110" height="38" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/><text x="205" y="87" text-anchor="middle" fill="#7a5c00" font-size="15" font-weight="bold">?</text></svg></div><div class="diagram-caption">Part–whole</div>Missing = <span class="blank"></span></li><li class="question">13 + 10 = <span class="blank"></span></li><li class="question">3 + 10 = <span class="blank"></span></li><li class="question">20 − 17 = <span class="blank"></span></li><li class="question">14 − 6 = <span class="blank"></span></li></ol>
+<div class="section-header">⏱ Section 4: Word Problems (15 mins)</div>
+<ol class="q-list"><li class="question"><strong>Minh</strong> has <strong>5 flowers</strong> and gets <strong>8 more</strong>. How many in total?<br><div class="diagram-wrap"><svg width="280" height="110" viewBox="0 0 280 110" font-family="'Segoe UI',Arial,sans-serif"><rect x="60" y="8" width="160" height="40" rx="6" fill="#14532d"/><text x="140" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">?</text><rect x="20" y="62" width="110" height="38" rx="6" fill="#fce4ec" stroke="#880e4f" stroke-width="2"/><text x="75" y="87" text-anchor="middle" fill="#880e4f" font-size="15" font-weight="bold">5</text><rect x="150" y="62" width="110" height="38" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/><text x="205" y="87" text-anchor="middle" fill="#7a5c00" font-size="15" font-weight="bold">8</text></svg></div><div class="diagram-caption">Part–whole for the story</div>Answer: <span class="blank"></span> flowers</li><li class="question"><strong>Bao</strong> has <strong>17 flowers</strong> and gives away <strong>15</strong>. How many left?<br><div class="diagram-wrap"><svg width="280" height="110" viewBox="0 0 280 110" font-family="'Segoe UI',Arial,sans-serif"><rect x="60" y="8" width="160" height="40" rx="6" fill="#14532d"/><text x="140" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">17</text><rect x="20" y="62" width="110" height="38" rx="6" fill="#fce4ec" stroke="#880e4f" stroke-width="2"/><text x="75" y="87" text-anchor="middle" fill="#880e4f" font-size="15" font-weight="bold">?</text><rect x="150" y="62" width="110" height="38" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/><text x="205" y="87" text-anchor="middle" fill="#7a5c00" font-size="15" font-weight="bold">15</text></svg></div><div class="diagram-caption">Take-away model</div>Answer: <span class="blank"></span></li><li class="question"><strong>Nam</strong> finds <strong>8</strong> then <strong>7</strong> more flowers. Total? <span class="blank"></span></li><li class="question">There are <strong>5 red</strong> and <strong>11 blue</strong> balloons. Which colour has more? <span class="blank"></span></li><li class="question">A jar has 7 sweets. 1 are eaten. How many left?<div class="mc-options"><span class="mc-opt">A) 2</span><span class="mc-opt">B) 8</span><span class="mc-opt">C) 6</span><span class="mc-opt">D) 10</span></div></li></ol>
+<div class="section-header">⏱ Section 5: Measurement &amp; Time (10 mins)</div>
+<ol class="q-list"><li class="question">How many cm in 1 m? <span class="blank"></span></li><li class="question">Start at <strong>14:00</strong>. After <strong>1 hour(s)</strong>, the time is? <span class="blank"></span></li><li class="question">Longer: <strong>10 cm</strong> or <strong>6 cm</strong>? <span class="blank"></span></li><li class="question">Read the thermometer:<br><div class="diagram-wrap"><svg width="55" height="110" viewBox="0 0 55 110"><rect x="22" y="12" width="10" height="70" rx="5" fill="#eee" stroke="#f57f17" stroke-width="2"/><circle cx="27" cy="90" r="12" fill="#fffde7" stroke="#f57f17" stroke-width="2"/><rect x="24" y="65" width="6" height="25" fill="#c0392b"/><text x="42" y="55" font-size="11" fill="#f57f17">18°C</text></svg></div><div class="diagram-caption">Thermometer</div>Temperature = <span class="blank"></span> °C</li><li class="question">Perimeter of this rectangle?<br><div class="diagram-wrap"><svg width="72" height="64" viewBox="0 0 72 64" font-family="'Segoe UI',Arial,sans-serif"><rect x="12" y="8" width="48" height="36" fill="#fce4ec" stroke="#880e4f" stroke-width="2"/><text x="36" y="60" text-anchor="middle" font-size="11" fill="#880e4f">4 cm</text><text x="8" y="26" text-anchor="middle" font-size="11" fill="#880e4f" transform="rotate(-90,8,26)">3 cm</text></svg></div><div class="diagram-caption">Rectangle</div>Perimeter = <span class="blank"></span> cm</li></ol>
+<div class="section-header">⏱ Section 6: Geometry &amp; Data (10 mins)</div>
+<ol class="q-list"><li class="question">Name this shape:<br><div class="diagram-wrap"><svg width="80" height="80" viewBox="0 0 80 80"><polygon points="40,4 72,22 72,58 40,76 8,58 8,22" fill="#fff3e0" stroke="#e65100" stroke-width="3"/></svg></div><div class="diagram-caption">Hexagon</div><span class="blank"></span></li><li class="question">Lines of symmetry on this <strong>Square</strong>?<br><div class="diagram-wrap"><svg width="80" height="80" viewBox="0 0 80 80"><rect x="10" y="10" width="60" height="60" fill="#fce4ec" stroke="#880e4f" stroke-width="3"/><line x1="10" y1="40" x2="70" y2="40" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/><line x1="40" y1="10" x2="40" y2="70" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/></svg></div><div class="diagram-caption">Square</div><span class="blank"></span></li><li class="question">Count the shaded squares:<br><div class="diagram-wrap"><svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="20" height="20" fill="#880e4f" stroke="#880e4f" stroke-width="1"/><rect x="24" y="2" width="20" height="20" fill="#fce4ec" stroke="#880e4f" stroke-width="1"/><rect x="2" y="24" width="20" height="20" fill="#880e4f" stroke="#880e4f" stroke-width="1"/><rect x="24" y="24" width="20" height="20" fill="#880e4f" stroke="#880e4f" stroke-width="1"/></svg></div><div class="diagram-caption">Area grid</div>Shaded = <span class="blank"></span></li><li class="question">Each ● = 1. How many Apples?<br><div class="diagram-wrap"><svg width="170" height="100" viewBox="0 0 170 100"><text x="4" y="22" font-size="12" fill="#333">Apples</text><circle cx="70" cy="18" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="90" cy="18" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="110" cy="18" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><text x="4" y="52" font-size="12" fill="#333">Pears</text><circle cx="70" cy="48" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="90" cy="48" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="110" cy="48" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><text x="4" y="82" font-size="12" fill="#333">Bananas</text><circle cx="70" cy="78" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="90" cy="78" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="110" cy="78" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><circle cx="130" cy="78" r="7" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/></svg></div><div class="diagram-caption">Pictograph</div><span class="blank"></span></li><li class="question">A hexagon has 6 sides. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li></ol>
+<div class="section-header">⏱ Section 7: Fractions — Halves &amp; Quarters (15 mins)</div>
+<ol class="q-list"><li class="question">What fraction of the circle is shaded?<br><div class="diagram-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><path d="M50,50 L50.0,10.0 A40,40 0 0,1 90.0,50.0 Z" fill="#e65100" stroke="white" stroke-width="1"/><path d="M50,50 L90.0,50.0 A40,40 0 0,1 50.0,90.0 Z" fill="#e65100" stroke="white" stroke-width="1"/><path d="M50,50 L50.0,90.0 A40,40 0 0,1 10.0,50.0 Z" fill="#fff3e0" stroke="white" stroke-width="1"/><path d="M50,50 L10.0,50.0 A40,40 0 0,1 50.0,10.0 Z" fill="#fff3e0" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction circle</div><span class="blank"></span></li><li class="question">What fraction is marked on the number line?<br><div class="diagram-wrap"><svg width="280" height="58" viewBox="0 0 280 58" font-family="'Segoe UI',Arial,sans-serif"><line x1="16" y1="28" x2="264" y2="28" stroke="#333" stroke-width="2"/><line x1="20" y1="22" x2="20" y2="34" stroke="#333" stroke-width="1.5"/><text x="20" y="50" text-anchor="middle" font-size="10" fill="#333">0/2</text><line x1="140" y1="22" x2="140" y2="34" stroke="#333" stroke-width="1.5"/><text x="140" y="50" text-anchor="middle" font-size="10" fill="#333">1/2</text><line x1="260" y1="22" x2="260" y2="34" stroke="#333" stroke-width="1.5"/><text x="260" y="50" text-anchor="middle" font-size="10" fill="#333">2/2</text><circle cx="140" cy="28" r="6" fill="#c0392b"/></svg></div><div class="diagram-caption">Fraction number line</div><span class="blank"></span></li><li class="question">What fraction of the bar is shaded?<br><div class="diagram-wrap"><svg width="200" height="32" viewBox="0 0 200 32"><rect x="0" y="0" width="100" height="32" fill="#4a148c" stroke="white" stroke-width="1"/><rect x="100" y="0" width="100" height="32" fill="#f3e5f5" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction bar</div><span class="blank"></span></li><li class="question">What fraction is <em>NOT</em> shaded?<br><div class="diagram-wrap"><svg width="200" height="32" viewBox="0 0 200 32"><rect x="0" y="0" width="50" height="32" fill="#0d47a1" stroke="white" stroke-width="1"/><rect x="50" y="0" width="50" height="32" fill="#0d47a1" stroke="white" stroke-width="1"/><rect x="100" y="0" width="50" height="32" fill="#e3f2fd" stroke="white" stroke-width="1"/><rect x="150" y="0" width="50" height="32" fill="#e3f2fd" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction bar</div><span class="blank"></span></li><li class="question">Which is greater: <strong>1/2</strong> or <strong>1/4</strong>? <span class="blank"></span></li></ol>
+<div class="bonus">⭐ Bonus Challenge (5 mins)</div>
+<ol class="q-list"><li class="question">18 + 5 − 1 = <span class="blank"></span></li><li class="question">Find the missing number: 10, 20, 30, ___, 50 → <span class="blank"></span></li><li class="question">Challenge: total squares in the array?<br><div class="diagram-wrap"><svg width="74" height="52" viewBox="0 0 74 52" font-family="'Segoe UI',Arial,sans-serif"><rect x="6" y="6" width="18" height="18" rx="3" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><rect x="28" y="6" width="18" height="18" rx="3" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><rect x="50" y="6" width="18" height="18" rx="3" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><rect x="6" y="28" width="18" height="18" rx="3" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><rect x="28" y="28" width="18" height="18" rx="3" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><rect x="50" y="28" width="18" height="18" rx="3" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/></svg></div><div class="diagram-caption">2×3</div><span class="blank"></span></li></ol>
+
+
+<hr class="before-answer">
 <div class="answer-section">
-<div class="answer-header">✅ Answer Key — Lesson 43 (Grade 1, 90 Minute Test)</div>
-<table class="answer-key"><tr><th>#</th><th>Answer</th><th>#</th><th>Answer</th><th>#</th><th>Answer</th></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 1: Counting &amp; Number Recognition</td></tr>
-<tr><td>1</td><td>True</td><td>2</td><td>False</td><td>3</td><td>True</td></tr>
-<tr><td>4</td><td>False</td><td>5</td><td>False</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 2: Addition</td></tr>
-<tr><td>1</td><td>16</td><td>2</td><td>36</td><td>3</td><td>8</td></tr>
-<tr><td>4</td><td>39</td><td>5</td><td>48</td><td>6</td><td>15</td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 3: Subtraction</td></tr>
-<tr><td>1</td><td>B) 8</td><td>2</td><td>B) 14</td><td>3</td><td>A) 2</td></tr>
-<tr><td>4</td><td>B) 4</td><td>5</td><td>A) 22</td><td>6</td><td>7</td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 4: Comparing Numbers &amp; Order</td></tr>
-<tr><td>1</td><td>True</td><td>2</td><td>True</td><td>3</td><td>False</td></tr>
-<tr><td>4</td><td>False</td><td>5</td><td>True</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 5: Word Problems</td></tr>
-<tr><td>1</td><td>D) 3 children</td><td>2</td><td>C) 3 books</td><td>3</td><td>D) 43 animals</td></tr>
-<tr><td>4</td><td>C) 13 butterflies</td><td>5</td><td>A) 56 students</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 6: Place Value</td></tr>
-<tr><td>1</td><td>4 tens, 6 ones</td><td>2</td><td>7 tens, 6 ones</td><td>3</td><td>2 tens, 5 ones</td></tr>
-<tr><td>4</td><td>75</td><td>5</td><td>13</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 7: Number Patterns</td></tr>
-<tr><td>1</td><td>C) 26</td><td>2</td><td>D) 18</td><td>3</td><td>B) 9</td></tr>
-<tr><td>4</td><td>B) 18</td><td>5</td><td>A) 18</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Bonus Challenge</td></tr>
-<tr><td>1</td><td>36</td><td>2</td><td>8</td><td>3</td><td>11</td></tr>
-</table>
+  <div class="answer-header">✅ Answer Key — Lesson 43</div>
+  <table class="answer-key">
+    <thead><tr><th>Section</th><th>Q#</th><th>Answer</th></tr></thead>
+    <tbody><tr><td>S1</td><td>1</td><td style="text-align:left">39</td></tr>
+<tr><td>S1</td><td>2</td><td style="text-align:left">22</td></tr>
+<tr><td>S1</td><td>3</td><td style="text-align:left">40</td></tr>
+<tr><td>S1</td><td>4</td><td style="text-align:left">D) 44</td></tr>
+<tr><td>S1</td><td>5</td><td style="text-align:left">50</td></tr>
+<tr><td>S2</td><td>1</td><td style="text-align:left">47</td></tr>
+<tr><td>S2</td><td>2</td><td style="text-align:left">20</td></tr>
+<tr><td>S2</td><td>3</td><td style="text-align:left">80</td></tr>
+<tr><td>S2</td><td>4</td><td style="text-align:left">A) 44</td></tr>
+<tr><td>S2</td><td>5</td><td style="text-align:left">20</td></tr>
+<tr><td>S3</td><td>1</td><td style="text-align:left">2</td></tr>
+<tr><td>S3</td><td>2</td><td style="text-align:left">23</td></tr>
+<tr><td>S3</td><td>3</td><td style="text-align:left">13</td></tr>
+<tr><td>S3</td><td>4</td><td style="text-align:left">3</td></tr>
+<tr><td>S3</td><td>5</td><td style="text-align:left">8</td></tr>
+<tr><td>S4</td><td>1</td><td style="text-align:left">13</td></tr>
+<tr><td>S4</td><td>2</td><td style="text-align:left">2</td></tr>
+<tr><td>S4</td><td>3</td><td style="text-align:left">15</td></tr>
+<tr><td>S4</td><td>4</td><td style="text-align:left">blue</td></tr>
+<tr><td>S4</td><td>5</td><td style="text-align:left">C) 6</td></tr>
+<tr><td>S5</td><td>1</td><td style="text-align:left">100</td></tr>
+<tr><td>S5</td><td>2</td><td style="text-align:left">15:00</td></tr>
+<tr><td>S5</td><td>3</td><td style="text-align:left">10 cm</td></tr>
+<tr><td>S5</td><td>4</td><td style="text-align:left">18 °C</td></tr>
+<tr><td>S5</td><td>5</td><td style="text-align:left">14 cm</td></tr>
+<tr><td>S6</td><td>1</td><td style="text-align:left">Hexagon</td></tr>
+<tr><td>S6</td><td>2</td><td style="text-align:left">4</td></tr>
+<tr><td>S6</td><td>3</td><td style="text-align:left">3</td></tr>
+<tr><td>S6</td><td>4</td><td style="text-align:left">3</td></tr>
+<tr><td>S6</td><td>5</td><td style="text-align:left">True</td></tr>
+<tr><td>S2</td><td>1</td><td style="text-align:left">2/4</td></tr>
+<tr><td>S2</td><td>2</td><td style="text-align:left">1/2</td></tr>
+<tr><td>S2</td><td>3</td><td style="text-align:left">1/2</td></tr>
+<tr><td>S2</td><td>4</td><td style="text-align:left">2/4</td></tr>
+<tr><td>S2</td><td>5</td><td style="text-align:left">1/2</td></tr>
+<tr><td>Bonus</td><td>B1</td><td style="text-align:left">22</td></tr>
+<tr><td>Bonus</td><td>B2</td><td style="text-align:left">40</td></tr>
+<tr><td>Bonus</td><td>B3</td><td style="text-align:left">6</td></tr>
+</tbody>
+  </table>
 </div>
+
 </body>
 </html>

@@ -1,75 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grade 1 Math – 90 Minute Test (Lesson 94)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 94 – Grade 1 Math Theory</title>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 32px 24px;
-      color: #1a1a2e;
-      font-size: 15px;
-      line-height: 1.7;
+      max-width: 880px; margin: 0 auto;
+      padding: 32px 24px; color: #1a1a2e;
+      font-size: 15px; line-height: 1.75;
     }
-    h1 { text-align:center; font-size:1.55em; color:#0d4f8c; margin-bottom:4px; }
+    h1 { text-align:center; font-size:1.55em; color:#14532d; margin-bottom:4px; }
     .meta { text-align:center; color:#555; margin-bottom:28px; font-size:.97em; }
     .section-header {
-      background:#e8f0fb; border-left:5px solid #0d4f8c;
+      background:#e8f5e9; border-left:5px solid #14532d;
       padding:7px 14px; margin:28px 0 14px 0;
-      font-weight:bold; font-size:1.05em; color:#0d4f8c;
+      font-weight:bold; font-size:1.05em; color:#14532d;
       border-radius:0 6px 6px 0;
     }
-    .question { margin:10px 0 10px 18px; }
-    .blank {
-      display:inline-block; min-width:48px;
-      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
-    }
-    .wide-blank {
-      display:inline-block; min-width:140px;
-      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
-    }
-    .visual-row {
-      display:flex; gap:40px; flex-wrap:wrap;
-      align-items:flex-start; margin:12px 0 12px 18px;
-    }
-    .visual-item { text-align:center; font-size:.9em; color:#444; }
-    .visual-item svg { display:block; margin:0 auto 6px auto; }
-    /* Multiple choice */
-    .mc-options { display:flex; gap:18px; flex-wrap:wrap; margin:5px 0 3px 0; }
-    .mc-opt { padding:3px 12px; border:1.5px solid #bcd; border-radius:4px; background:#f7f9ff; }
-    /* True / False */
-    .tf-row { display:inline-flex; gap:18px; margin-left:10px; }
-    .tf-opt { padding:2px 12px; border:1.5px solid #bcd; border-radius:4px; background:#f7f9ff; }
-    /* Matching */
-    .match-instructions { margin:2px 0 8px 18px; color:#555; font-size:.93em; }
-    .matching { display:flex; gap:50px; margin:8px 0 10px 18px; flex-wrap:wrap; }
-    .match-col { display:flex; flex-direction:column; gap:8px; }
-    .match-item {
-      padding:5px 14px; border:1.5px solid #bcd; border-radius:6px;
-      background:#f7f9ff; min-width:100px; text-align:center;
-    }
-    .match-blank {
-      display:inline-block; min-width:26px;
-      border-bottom:2px solid #333; margin-right:6px; vertical-align:bottom;
-    }
-    /* Dot picture */
-    .dot-picture { margin:6px 0 4px 18px; }
-    /* Answer key */
-    table.answer-key {
-      border-collapse:collapse; width:100%;
-      margin-top:12px; font-size:.93em;
-    }
-    table.answer-key th {
-      background:#0d4f8c; color:#fff;
-      padding:7px 12px; text-align:center;
-    }
-    table.answer-key td {
-      border:1px solid #bcd; padding:6px 12px; text-align:center;
-    }
-    table.answer-key tr:nth-child(even) td { background:#f0f5ff; }
     .bonus {
       background:#fff8e1; border-left:5px solid #f9a825;
       padding:7px 14px; margin:28px 0 14px 0;
@@ -82,71 +31,126 @@
       font-weight:bold; font-size:1.05em; color:#2e7d32;
       border-radius:0 6px 6px 0;
     }
-    hr { border:none; border-top:1px solid #dce3ef; margin:32px 0; }
+    .question { margin:10px 0 10px 18px; }
+    .blank {
+      display:inline-block; min-width:54px;
+      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
+    }
+    .wide-blank {
+      display:inline-block; min-width:160px;
+      border-bottom:2px solid #333; margin:0 5px; vertical-align:bottom;
+    }
+    .mc-options { display:flex; gap:18px; flex-wrap:wrap; margin:5px 0 3px 0; }
+    .mc-opt { padding:3px 14px; border:1.5px solid #a5d6a7; border-radius:4px; background:#f1f8f2; }
+    .tf-row { display:inline-flex; gap:18px; margin-left:10px; }
+    .tf-opt { padding:2px 12px; border:1.5px solid #a5d6a7; border-radius:4px; background:#f1f8f2; }
+    .match-instructions { margin:2px 0 8px 18px; color:#555; font-size:.93em; }
+    .matching { display:flex; gap:50px; margin:8px 0 10px 18px; flex-wrap:wrap; }
+    .match-col { display:flex; flex-direction:column; gap:8px; }
+    .match-item {
+      padding:5px 14px; border:1.5px solid #a5d6a7; border-radius:6px;
+      background:#f1f8f2; min-width:110px; text-align:center;
+    }
+    .match-blank {
+      display:inline-block; min-width:26px;
+      border-bottom:2px solid #333; margin-right:6px; vertical-align:bottom;
+    }
+    table.answer-key {
+      border-collapse:collapse; width:100%;
+      margin-top:12px; font-size:.93em;
+    }
+    table.answer-key th {
+      background:#14532d; color:#fff;
+      padding:7px 12px; text-align:center;
+    }
+    table.answer-key td {
+      border:1px solid #a5d6a7; padding:6px 12px; text-align:center;
+    }
+    table.answer-key tr:nth-child(even) td { background:#f0faf2; }
+    hr { border:none; border-top:1px solid #c8e6c9; margin:32px 0; }
     .name-line { display:flex; gap:32px; margin-bottom:20px; font-size:.97em; }
     .name-line span { white-space:nowrap; }
     .name-line .line { flex:1; border-bottom:1.5px solid #333; min-width:100px; }
     ol.q-list { padding-left:22px; margin:0; }
-    ol.q-list li { margin:9px 0; }
+    ol.q-list li { margin:10px 0; }
     .answer-section { break-before:page; page-break-before:always; }
+    .diagram-wrap { margin: 14px 0 4px 18px; }
+    .diagram-caption { font-size:.87em; color:#666; font-style:italic; margin: 2px 0 10px 18px; }
     @media print { hr.before-answer { display:none; } }
 </style>
 </head>
 <body>
-<h1>🧠 Grade 1 Math – 90 Minute Test (Lesson 94)</h1>
-<div class="meta">Total: 40 points &nbsp;|&nbsp; Time: 90 minutes</div>
-<div class="name-line">
-  <span>Name:</span><span class="line"></span>
-  <span>Date:</span><span class="line"></span>
-</div>
-<div class="section-header">⏱ Section 1: Counting &amp; Number Recognition (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">🔘 Multiple Choice</small></div>
-<ol class="q-list"><li class="question">Count the dots:&nbsp; ● ● ● ● ● ● ● ● ● ● ● ● ● ● <br><div class="mc-options"><span class="mc-opt">A) 11</span><span class="mc-opt">B) 17</span><span class="mc-opt">C) 14</span><span class="mc-opt">D) 16</span></div></li><li class="question">What number is missing?&nbsp; 17, 18, ___, 20<br><div class="mc-options"><span class="mc-opt">A) 18</span><span class="mc-opt">B) 20</span><span class="mc-opt">C) 19</span><span class="mc-opt">D) 17</span></div></li><li class="question">What number comes <strong>before</strong> <strong>37</strong>?<br><div class="mc-options"><span class="mc-opt">A) 36</span><span class="mc-opt">B) 34</span><span class="mc-opt">C) 35</span><span class="mc-opt">D) 37</span></div></li><li class="question">Count by 5s. What comes next?&nbsp; 15, 20, 25, ___<br><div class="mc-options"><span class="mc-opt">A) 30</span><span class="mc-opt">B) 33</span><span class="mc-opt">C) 29</span><span class="mc-opt">D) 27</span></div></li><li class="question">Which word matches <strong>4</strong>?<br><div class="mc-options"><span class="mc-opt">A) four</span><span class="mc-opt">B) five</span><span class="mc-opt">C) six</span><span class="mc-opt">D) three</span></div></li></ol>
-<div class="section-header">⏱ Section 2: Addition (15 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✅ True/False</small></div>
-<ol class="q-list"><li class="question">10 + 4 = <strong>14</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question">1 + 2 = <strong>2</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question">4 + 5 = <strong>9</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question">6 + 4 = <strong>11</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question">1 + 3 = <strong>4</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li><li class="question">5 + 5 = <strong>10</strong> &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li></ol>
-<div class="section-header">⏱ Section 3: Subtraction (15 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✏️ Fill-in</small></div>
-<ol class="q-list"><li class="question">5 − 3 = <span class="blank"></span></li><li class="question">28 − 11 = <span class="blank"></span></li><li class="question">10 − 6 = <span class="blank"></span></li><li class="question">44 − 33 = <span class="blank"></span></li><li class="question">8 − 3 = <span class="blank"></span></li><li class="question">Fill in the blank: 7 − <span class="blank"></span> = 3</li></ol>
-<div class="section-header">⏱ Section 4: Multiplication (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">🔘 Multiple Choice</small></div>
-<ol class="q-list"><li class="question">3 × 10 = ?<br><div class="mc-options"><span class="mc-opt">A) 27</span><span class="mc-opt">B) 32</span><span class="mc-opt">C) 33</span><span class="mc-opt">D) 30</span></div></li><li class="question">5 × 7 = ?<br><div class="mc-options"><span class="mc-opt">A) 34</span><span class="mc-opt">B) 40</span><span class="mc-opt">C) 35</span><span class="mc-opt">D) 36</span></div></li><li class="question">5 × 6 = ?<br><div class="mc-options"><span class="mc-opt">A) 35</span><span class="mc-opt">B) 30</span><span class="mc-opt">C) 29</span><span class="mc-opt">D) 25</span></div></li><li class="question">4 × 6 = ?<br><div class="mc-options"><span class="mc-opt">A) 27</span><span class="mc-opt">B) 25</span><span class="mc-opt">C) 21</span><span class="mc-opt">D) 24</span></div></li><li class="question">5 × 7 = ?<br><div class="mc-options"><span class="mc-opt">A) 40</span><span class="mc-opt">B) 36</span><span class="mc-opt">C) 34</span><span class="mc-opt">D) 35</span></div></li><li class="question">Fill in: 2 + 2 + 2 = 2 × <span class="blank"></span> = <span class="blank"></span></li></ol>
-<div class="section-header">⏱ Section 5: Word Problems (20 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✏️ Fill-in</small></div>
-<ol class="q-list"><li class="question">There are <strong>23 chairs</strong> in the room. <strong>9 more</strong> are brought in. How many chairs now?<br>Answer: <span class="blank"></span> chairs</li><li class="question">Linh has <strong>4 pencils</strong>. Her teacher gives her <strong>2 more</strong>. How many does she have now?<br>Answer: <span class="blank"></span> pencils</li><li class="question">There are <strong>52 butterflies</strong>. <strong>17 fly away</strong>. How many stay?<br>Answer: <span class="blank"></span> butterflies</li><li class="question">There are <strong>5 red flowers</strong> and <strong>1 yellow flowers</strong>. How many flowers altogether?<br>Answer: <span class="blank"></span> flowers</li><li class="question">Mai bakes <strong>17 cupcakes</strong> in the morning and <strong>6</strong> in the afternoon. How many cupcakes total?<br>Answer: <span class="blank"></span> cupcakes</li></ol>
-<div class="section-header">⏱ Section 6: Place Value (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✏️ Fill-in</small></div>
-<ol class="q-list"><li class="question"><strong>30</strong> = <span class="blank"></span> tens and <span class="blank"></span> ones</li><li class="question"><strong>32</strong> = <span class="blank"></span> tens and <span class="blank"></span> ones</li><li class="question"><strong>35</strong> = <span class="blank"></span> tens and <span class="blank"></span> ones</li><li class="question"><strong>2 tens</strong> and <strong>1 ones</strong> = <span class="blank"></span></li><li class="question"><strong>5 tens</strong> and <strong>3 ones</strong> = <span class="blank"></span></li></ol>
-<div class="section-header">⏱ Section 7: Number Patterns (10 mins) &nbsp;<small style="font-weight:normal;opacity:.8">✏️ Fill-in</small></div>
-<ol class="q-list"><li class="question">Fill in the missing number:&nbsp; 2, 5, ___, 11, 14, 17</li><li class="question">Fill in the missing number:&nbsp; 1, 5, ___, 13, 17, 21</li><li class="question">Fill in the missing number:&nbsp; 8, ___, 18, 23, 28, 33</li><li class="question">Fill in the missing number:&nbsp; 8, 12, 16, ___, 24, 28</li><li class="question">Fill in the missing number:&nbsp; 3, 7, ___, 15, 19, 23</li></ol>
-<div class="bonus">⏱ Bonus Challenge (5 mins)</div>
-<ol class="q-list">
-  <li class="question">31 + 22 − 31 = <span class='blank'></span></li>
-  <li class="question">Tuan has <strong>34</strong> stickers. Gives <strong>33</strong> to a friend, then receives <strong>4</strong> from his sister. How many does he have now? <span class='blank'></span></li>
-  <li class="question">Fill in the blank: 2, ___, 8, 11, 14, 17 <span class='blank'></span></li>
-</ol>
-<hr class="before-answer"/>
+  <h1>🧠 Grade 1 Math Theory – Lesson 94</h1>
+  <div class="meta">Spiral: Numbers | 90-Minute Lesson &nbsp;|&nbsp; Level: Year 1</div>
+  <div class="name-line">
+    <span>Name:</span><span class="line"></span>
+    <span>Date:</span><span class="line"></span>
+  </div>
+  <hr>
+<div class="section-header">⏱ Section 1: Spiral: Numbers & Place Value (15 mins)</div>
+<ol class="q-list"><li class="question"><strong>97</strong> has <span class="blank"></span> tens and <span class="blank"></span> ones<br><div class="diagram-wrap"><svg width="440" height="130" viewBox="0 0 440 130" font-family="'Segoe UI',Arial,sans-serif"><rect x="140" y="6" width="160" height="38" rx="7" fill="#14532d"/><text x="220" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">97</text><rect x="80" y="78" width="120" height="40" rx="6" fill="#e8f5e9" stroke="#14532d"/><text x="140" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d">9 Tens</text><text x="140" y="111" text-anchor="middle" font-size="11" fill="#555">= 90</text><line x1="220" y1="44" x2="140" y2="78" stroke="#14532d" stroke-width="1.8"/><rect x="280" y="78" width="120" height="40" rx="6" fill="#e8f5e9" stroke="#14532d"/><text x="340" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d">7 Ones</text><text x="340" y="111" text-anchor="middle" font-size="11" fill="#555">= 7</text><line x1="220" y1="44" x2="340" y2="78" stroke="#14532d" stroke-width="1.8"/></svg></div><div class="diagram-caption">97</div></li><li class="question">10 + 8 = <span class="blank"></span></li><li class="question">Shaded fraction: <span class="blank"></span><br><div class="diagram-wrap"><svg width="200" height="32" viewBox="0 0 200 32"><rect x="0" y="0" width="50" height="32" fill="#f57f17" stroke="white" stroke-width="1"/><rect x="50" y="0" width="50" height="32" fill="#fffde7" stroke="white" stroke-width="1"/><rect x="100" y="0" width="50" height="32" fill="#fffde7" stroke="white" stroke-width="1"/><rect x="150" y="0" width="50" height="32" fill="#fffde7" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction</div></li><li class="question">Time shown: <span class="blank"></span><br><div class="diagram-wrap"><svg width="130" height="130" viewBox="0 0 130 130" font-family="'Segoe UI',Arial,sans-serif"><circle cx="65.0" cy="65.0" r="60.0" fill="white" stroke="#333" stroke-width="2.5"/><circle cx="65.0" cy="65.0" r="3.5" fill="#333"/><line x1="65.0" y1="7.0" x2="65.0" y2="17.0" stroke="#333" stroke-width="2.5"/><line x1="71.1" y1="7.3" x2="70.5" y2="12.3" stroke="#333" stroke-width="1"/><line x1="77.1" y1="8.3" x2="76.0" y2="13.2" stroke="#333" stroke-width="1"/><line x1="82.9" y1="9.8" x2="81.4" y2="14.6" stroke="#333" stroke-width="1"/><line x1="88.6" y1="12.0" x2="86.6" y2="16.6" stroke="#333" stroke-width="1"/><line x1="94.0" y1="14.8" x2="89.0" y2="23.4" stroke="#333" stroke-width="2.5"/><line x1="99.1" y1="18.1" x2="96.2" y2="22.1" stroke="#333" stroke-width="1"/><line x1="103.8" y1="21.9" x2="100.5" y2="25.6" stroke="#333" stroke-width="1"/><line x1="108.1" y1="26.2" x2="104.4" y2="29.5" stroke="#333" stroke-width="1"/><line x1="111.9" y1="30.9" x2="107.9" y2="33.8" stroke="#333" stroke-width="1"/><line x1="115.2" y1="36.0" x2="106.6" y2="41.0" stroke="#333" stroke-width="2.5"/><line x1="118.0" y1="41.4" x2="113.4" y2="43.4" stroke="#333" stroke-width="1"/><line x1="120.2" y1="47.1" x2="115.4" y2="48.6" stroke="#333" stroke-width="1"/><line x1="121.7" y1="52.9" x2="116.8" y2="54.0" stroke="#333" stroke-width="1"/><line x1="122.7" y1="58.9" x2="117.7" y2="59.5" stroke="#333" stroke-width="1"/><line x1="123.0" y1="65.0" x2="113.0" y2="65.0" stroke="#333" stroke-width="2.5"/><line x1="122.7" y1="71.1" x2="117.7" y2="70.5" stroke="#333" stroke-width="1"/><line x1="121.7" y1="77.1" x2="116.8" y2="76.0" stroke="#333" stroke-width="1"/><line x1="120.2" y1="82.9" x2="115.4" y2="81.4" stroke="#333" stroke-width="1"/><line x1="118.0" y1="88.6" x2="113.4" y2="86.6" stroke="#333" stroke-width="1"/><line x1="115.2" y1="94.0" x2="106.6" y2="89.0" stroke="#333" stroke-width="2.5"/><line x1="111.9" y1="99.1" x2="107.9" y2="96.2" stroke="#333" stroke-width="1"/><line x1="108.1" y1="103.8" x2="104.4" y2="100.5" stroke="#333" stroke-width="1"/><line x1="103.8" y1="108.1" x2="100.5" y2="104.4" stroke="#333" stroke-width="1"/><line x1="99.1" y1="111.9" x2="96.2" y2="107.9" stroke="#333" stroke-width="1"/><line x1="94.0" y1="115.2" x2="89.0" y2="106.6" stroke="#333" stroke-width="2.5"/><line x1="88.6" y1="118.0" x2="86.6" y2="113.4" stroke="#333" stroke-width="1"/><line x1="82.9" y1="120.2" x2="81.4" y2="115.4" stroke="#333" stroke-width="1"/><line x1="77.1" y1="121.7" x2="76.0" y2="116.8" stroke="#333" stroke-width="1"/><line x1="71.1" y1="122.7" x2="70.5" y2="117.7" stroke="#333" stroke-width="1"/><line x1="65.0" y1="123.0" x2="65.0" y2="113.0" stroke="#333" stroke-width="2.5"/><line x1="58.9" y1="122.7" x2="59.5" y2="117.7" stroke="#333" stroke-width="1"/><line x1="52.9" y1="121.7" x2="54.0" y2="116.8" stroke="#333" stroke-width="1"/><line x1="47.1" y1="120.2" x2="48.6" y2="115.4" stroke="#333" stroke-width="1"/><line x1="41.4" y1="118.0" x2="43.4" y2="113.4" stroke="#333" stroke-width="1"/><line x1="36.0" y1="115.2" x2="41.0" y2="106.6" stroke="#333" stroke-width="2.5"/><line x1="30.9" y1="111.9" x2="33.8" y2="107.9" stroke="#333" stroke-width="1"/><line x1="26.2" y1="108.1" x2="29.5" y2="104.4" stroke="#333" stroke-width="1"/><line x1="21.9" y1="103.8" x2="25.6" y2="100.5" stroke="#333" stroke-width="1"/><line x1="18.1" y1="99.1" x2="22.1" y2="96.2" stroke="#333" stroke-width="1"/><line x1="14.8" y1="94.0" x2="23.4" y2="89.0" stroke="#333" stroke-width="2.5"/><line x1="12.0" y1="88.6" x2="16.6" y2="86.6" stroke="#333" stroke-width="1"/><line x1="9.8" y1="82.9" x2="14.6" y2="81.4" stroke="#333" stroke-width="1"/><line x1="8.3" y1="77.1" x2="13.2" y2="76.0" stroke="#333" stroke-width="1"/><line x1="7.3" y1="71.1" x2="12.3" y2="70.5" stroke="#333" stroke-width="1"/><line x1="7.0" y1="65.0" x2="17.0" y2="65.0" stroke="#333" stroke-width="2.5"/><line x1="7.3" y1="58.9" x2="12.3" y2="59.5" stroke="#333" stroke-width="1"/><line x1="8.3" y1="52.9" x2="13.2" y2="54.0" stroke="#333" stroke-width="1"/><line x1="9.8" y1="47.1" x2="14.6" y2="48.6" stroke="#333" stroke-width="1"/><line x1="12.0" y1="41.4" x2="16.6" y2="43.4" stroke="#333" stroke-width="1"/><line x1="14.8" y1="36.0" x2="23.4" y2="41.0" stroke="#333" stroke-width="2.5"/><line x1="18.1" y1="30.9" x2="22.1" y2="33.8" stroke="#333" stroke-width="1"/><line x1="21.9" y1="26.2" x2="25.6" y2="29.5" stroke="#333" stroke-width="1"/><line x1="26.2" y1="21.9" x2="29.5" y2="25.6" stroke="#333" stroke-width="1"/><line x1="30.9" y1="18.1" x2="33.8" y2="22.1" stroke="#333" stroke-width="1"/><line x1="36.0" y1="14.8" x2="41.0" y2="23.4" stroke="#333" stroke-width="2.5"/><line x1="41.4" y1="12.0" x2="43.4" y2="16.6" stroke="#333" stroke-width="1"/><line x1="47.1" y1="9.8" x2="48.6" y2="14.6" stroke="#333" stroke-width="1"/><line x1="52.9" y1="8.3" x2="54.0" y2="13.2" stroke="#333" stroke-width="1"/><line x1="58.9" y1="7.3" x2="59.5" y2="12.3" stroke="#333" stroke-width="1"/><text x="86.0" y="28.6" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">1</text><text x="101.4" y="44.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">2</text><text x="107.0" y="65.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">3</text><text x="101.4" y="86.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">4</text><text x="86.0" y="101.4" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">5</text><text x="65.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">6</text><text x="44.0" y="101.4" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">7</text><text x="28.6" y="86.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">8</text><text x="23.0" y="65.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">9</text><text x="28.6" y="44.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">10</text><text x="44.0" y="28.6" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">11</text><text x="65.0" y="23.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">12</text><line x1="65.0" y1="65.0" x2="65.0" y2="23.0" stroke="#555" stroke-width="2.5" stroke-linecap="round"/><line x1="65.0" y1="65.0" x2="95.0" y2="65.0" stroke="#333" stroke-width="4" stroke-linecap="round"/></svg></div><div class="diagram-caption">Clock</div></li><li class="question">Name this shape: <span class="blank"></span><br><div class="diagram-wrap"><svg width="110" height="70" viewBox="0 0 110 70"><rect x="6" y="14" width="98" height="48" fill="#f3e5f5" stroke="#4a148c" stroke-width="3"/></svg></div><div class="diagram-caption">Rectangle</div></li></ol>
+<div class="section-header">⏱ Section 2: Spiral: Numbers & Place Value — Practice (15 mins)</div>
+<ol class="q-list"><li class="question"><strong>68</strong> has <span class="blank"></span> tens and <span class="blank"></span> ones<br><div class="diagram-wrap"><svg width="440" height="130" viewBox="0 0 440 130" font-family="'Segoe UI',Arial,sans-serif"><rect x="140" y="6" width="160" height="38" rx="7" fill="#14532d"/><text x="220" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">68</text><rect x="80" y="78" width="120" height="40" rx="6" fill="#e8f5e9" stroke="#14532d"/><text x="140" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d">6 Tens</text><text x="140" y="111" text-anchor="middle" font-size="11" fill="#555">= 60</text><line x1="220" y1="44" x2="140" y2="78" stroke="#14532d" stroke-width="1.8"/><rect x="280" y="78" width="120" height="40" rx="6" fill="#e8f5e9" stroke="#14532d"/><text x="340" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d">8 Ones</text><text x="340" y="111" text-anchor="middle" font-size="11" fill="#555">= 8</text><line x1="220" y1="44" x2="340" y2="78" stroke="#14532d" stroke-width="1.8"/></svg></div><div class="diagram-caption">68</div></li><li class="question">7 + 8 = <span class="blank"></span></li><li class="question">Shaded fraction: <span class="blank"></span><br><div class="diagram-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><path d="M50,50 L50.0,10.0 A40,40 0 0,1 90.0,50.0 Z" fill="#880e4f" stroke="white" stroke-width="1"/><path d="M50,50 L90.0,50.0 A40,40 0 0,1 50.0,90.0 Z" fill="#fce4ec" stroke="white" stroke-width="1"/><path d="M50,50 L50.0,90.0 A40,40 0 0,1 10.0,50.0 Z" fill="#fce4ec" stroke="white" stroke-width="1"/><path d="M50,50 L10.0,50.0 A40,40 0 0,1 50.0,10.0 Z" fill="#fce4ec" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction</div></li><li class="question">Time shown: <span class="blank"></span><br><div class="diagram-wrap"><svg width="130" height="130" viewBox="0 0 130 130" font-family="'Segoe UI',Arial,sans-serif"><circle cx="65.0" cy="65.0" r="60.0" fill="white" stroke="#333" stroke-width="2.5"/><circle cx="65.0" cy="65.0" r="3.5" fill="#333"/><line x1="65.0" y1="7.0" x2="65.0" y2="17.0" stroke="#333" stroke-width="2.5"/><line x1="71.1" y1="7.3" x2="70.5" y2="12.3" stroke="#333" stroke-width="1"/><line x1="77.1" y1="8.3" x2="76.0" y2="13.2" stroke="#333" stroke-width="1"/><line x1="82.9" y1="9.8" x2="81.4" y2="14.6" stroke="#333" stroke-width="1"/><line x1="88.6" y1="12.0" x2="86.6" y2="16.6" stroke="#333" stroke-width="1"/><line x1="94.0" y1="14.8" x2="89.0" y2="23.4" stroke="#333" stroke-width="2.5"/><line x1="99.1" y1="18.1" x2="96.2" y2="22.1" stroke="#333" stroke-width="1"/><line x1="103.8" y1="21.9" x2="100.5" y2="25.6" stroke="#333" stroke-width="1"/><line x1="108.1" y1="26.2" x2="104.4" y2="29.5" stroke="#333" stroke-width="1"/><line x1="111.9" y1="30.9" x2="107.9" y2="33.8" stroke="#333" stroke-width="1"/><line x1="115.2" y1="36.0" x2="106.6" y2="41.0" stroke="#333" stroke-width="2.5"/><line x1="118.0" y1="41.4" x2="113.4" y2="43.4" stroke="#333" stroke-width="1"/><line x1="120.2" y1="47.1" x2="115.4" y2="48.6" stroke="#333" stroke-width="1"/><line x1="121.7" y1="52.9" x2="116.8" y2="54.0" stroke="#333" stroke-width="1"/><line x1="122.7" y1="58.9" x2="117.7" y2="59.5" stroke="#333" stroke-width="1"/><line x1="123.0" y1="65.0" x2="113.0" y2="65.0" stroke="#333" stroke-width="2.5"/><line x1="122.7" y1="71.1" x2="117.7" y2="70.5" stroke="#333" stroke-width="1"/><line x1="121.7" y1="77.1" x2="116.8" y2="76.0" stroke="#333" stroke-width="1"/><line x1="120.2" y1="82.9" x2="115.4" y2="81.4" stroke="#333" stroke-width="1"/><line x1="118.0" y1="88.6" x2="113.4" y2="86.6" stroke="#333" stroke-width="1"/><line x1="115.2" y1="94.0" x2="106.6" y2="89.0" stroke="#333" stroke-width="2.5"/><line x1="111.9" y1="99.1" x2="107.9" y2="96.2" stroke="#333" stroke-width="1"/><line x1="108.1" y1="103.8" x2="104.4" y2="100.5" stroke="#333" stroke-width="1"/><line x1="103.8" y1="108.1" x2="100.5" y2="104.4" stroke="#333" stroke-width="1"/><line x1="99.1" y1="111.9" x2="96.2" y2="107.9" stroke="#333" stroke-width="1"/><line x1="94.0" y1="115.2" x2="89.0" y2="106.6" stroke="#333" stroke-width="2.5"/><line x1="88.6" y1="118.0" x2="86.6" y2="113.4" stroke="#333" stroke-width="1"/><line x1="82.9" y1="120.2" x2="81.4" y2="115.4" stroke="#333" stroke-width="1"/><line x1="77.1" y1="121.7" x2="76.0" y2="116.8" stroke="#333" stroke-width="1"/><line x1="71.1" y1="122.7" x2="70.5" y2="117.7" stroke="#333" stroke-width="1"/><line x1="65.0" y1="123.0" x2="65.0" y2="113.0" stroke="#333" stroke-width="2.5"/><line x1="58.9" y1="122.7" x2="59.5" y2="117.7" stroke="#333" stroke-width="1"/><line x1="52.9" y1="121.7" x2="54.0" y2="116.8" stroke="#333" stroke-width="1"/><line x1="47.1" y1="120.2" x2="48.6" y2="115.4" stroke="#333" stroke-width="1"/><line x1="41.4" y1="118.0" x2="43.4" y2="113.4" stroke="#333" stroke-width="1"/><line x1="36.0" y1="115.2" x2="41.0" y2="106.6" stroke="#333" stroke-width="2.5"/><line x1="30.9" y1="111.9" x2="33.8" y2="107.9" stroke="#333" stroke-width="1"/><line x1="26.2" y1="108.1" x2="29.5" y2="104.4" stroke="#333" stroke-width="1"/><line x1="21.9" y1="103.8" x2="25.6" y2="100.5" stroke="#333" stroke-width="1"/><line x1="18.1" y1="99.1" x2="22.1" y2="96.2" stroke="#333" stroke-width="1"/><line x1="14.8" y1="94.0" x2="23.4" y2="89.0" stroke="#333" stroke-width="2.5"/><line x1="12.0" y1="88.6" x2="16.6" y2="86.6" stroke="#333" stroke-width="1"/><line x1="9.8" y1="82.9" x2="14.6" y2="81.4" stroke="#333" stroke-width="1"/><line x1="8.3" y1="77.1" x2="13.2" y2="76.0" stroke="#333" stroke-width="1"/><line x1="7.3" y1="71.1" x2="12.3" y2="70.5" stroke="#333" stroke-width="1"/><line x1="7.0" y1="65.0" x2="17.0" y2="65.0" stroke="#333" stroke-width="2.5"/><line x1="7.3" y1="58.9" x2="12.3" y2="59.5" stroke="#333" stroke-width="1"/><line x1="8.3" y1="52.9" x2="13.2" y2="54.0" stroke="#333" stroke-width="1"/><line x1="9.8" y1="47.1" x2="14.6" y2="48.6" stroke="#333" stroke-width="1"/><line x1="12.0" y1="41.4" x2="16.6" y2="43.4" stroke="#333" stroke-width="1"/><line x1="14.8" y1="36.0" x2="23.4" y2="41.0" stroke="#333" stroke-width="2.5"/><line x1="18.1" y1="30.9" x2="22.1" y2="33.8" stroke="#333" stroke-width="1"/><line x1="21.9" y1="26.2" x2="25.6" y2="29.5" stroke="#333" stroke-width="1"/><line x1="26.2" y1="21.9" x2="29.5" y2="25.6" stroke="#333" stroke-width="1"/><line x1="30.9" y1="18.1" x2="33.8" y2="22.1" stroke="#333" stroke-width="1"/><line x1="36.0" y1="14.8" x2="41.0" y2="23.4" stroke="#333" stroke-width="2.5"/><line x1="41.4" y1="12.0" x2="43.4" y2="16.6" stroke="#333" stroke-width="1"/><line x1="47.1" y1="9.8" x2="48.6" y2="14.6" stroke="#333" stroke-width="1"/><line x1="52.9" y1="8.3" x2="54.0" y2="13.2" stroke="#333" stroke-width="1"/><line x1="58.9" y1="7.3" x2="59.5" y2="12.3" stroke="#333" stroke-width="1"/><text x="86.0" y="28.6" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">1</text><text x="101.4" y="44.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">2</text><text x="107.0" y="65.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">3</text><text x="101.4" y="86.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">4</text><text x="86.0" y="101.4" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">5</text><text x="65.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">6</text><text x="44.0" y="101.4" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">7</text><text x="28.6" y="86.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">8</text><text x="23.0" y="65.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">9</text><text x="28.6" y="44.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">10</text><text x="44.0" y="28.6" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">11</text><text x="65.0" y="23.0" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#333">12</text><line x1="65.0" y1="65.0" x2="65.0" y2="23.0" stroke="#555" stroke-width="2.5" stroke-linecap="round"/><line x1="65.0" y1="65.0" x2="80.0" y2="91.0" stroke="#333" stroke-width="4" stroke-linecap="round"/></svg></div><div class="diagram-caption">Clock</div></li><li class="question">Name this shape: <span class="blank"></span><br><div class="diagram-wrap"><svg width="110" height="70" viewBox="0 0 110 70"><rect x="6" y="14" width="98" height="48" fill="#fff3e0" stroke="#e65100" stroke-width="3"/></svg></div><div class="diagram-caption">Rectangle</div></li></ol>
+<div class="section-header">⏱ Section 3: Equal Groups &amp; Skip Counting (15 mins)</div>
+<ol class="q-list"><li class="question">Write a repeated-addition fact for this array. <span class="blank"></span> + <span class="blank"></span> + … = <span class="blank"></span><br><div class="diagram-wrap"><svg width="96" height="52" viewBox="0 0 96 52" font-family="'Segoe UI',Arial,sans-serif"><rect x="6" y="6" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="28" y="6" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="50" y="6" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="72" y="6" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="6" y="28" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="28" y="28" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="50" y="28" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/><rect x="72" y="28" width="18" height="18" rx="3" fill="#e8f5e9" stroke="#14532d" stroke-width="1.5"/></svg></div><div class="diagram-caption">2 rows of 4</div></li><li class="question">2 groups of 5 = <span class="blank"></span><br><div class="diagram-wrap"><svg width="150" height="60" viewBox="0 0 150 60" font-family="'Segoe UI',Arial,sans-serif"><rect x="8" y="8" width="62" height="52" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><circle cx="26" cy="28" r="6" fill="#e65100"/><circle cx="42" cy="28" r="6" fill="#e65100"/><circle cx="58" cy="28" r="6" fill="#e65100"/><circle cx="26" cy="44" r="6" fill="#e65100"/><circle cx="42" cy="44" r="6" fill="#e65100"/><rect x="78" y="8" width="62" height="52" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><circle cx="96" cy="28" r="6" fill="#e65100"/><circle cx="112" cy="28" r="6" fill="#e65100"/><circle cx="128" cy="28" r="6" fill="#e65100"/><circle cx="96" cy="44" r="6" fill="#e65100"/><circle cx="112" cy="44" r="6" fill="#e65100"/></svg></div><div class="diagram-caption">2 groups of 5</div></li><li class="question">Count by 10s: 10, 20, ___, 40, 50 → <span class="blank"></span></li><li class="question">5 × 10 = <span class="blank"></span></li><li class="question">10 ÷ 10 = <span class="blank"></span></li></ol>
+<div class="section-header">⏱ Section 4: Word Problems (15 mins)</div>
+<ol class="q-list"><li class="question"><strong>Linh</strong> has <strong>10 apples</strong> and gets <strong>5 more</strong>. How many in total?<br><div class="diagram-wrap"><svg width="280" height="110" viewBox="0 0 280 110" font-family="'Segoe UI',Arial,sans-serif"><rect x="60" y="8" width="160" height="40" rx="6" fill="#14532d"/><text x="140" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">?</text><rect x="20" y="62" width="110" height="38" rx="6" fill="#fce4ec" stroke="#880e4f" stroke-width="2"/><text x="75" y="87" text-anchor="middle" fill="#880e4f" font-size="15" font-weight="bold">10</text><rect x="150" y="62" width="110" height="38" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/><text x="205" y="87" text-anchor="middle" fill="#7a5c00" font-size="15" font-weight="bold">5</text></svg></div><div class="diagram-caption">Part–whole for the story</div>Answer: <span class="blank"></span> apples</li><li class="question"><strong>4 boxes</strong> each hold <strong>5 apples</strong>. Total?<br><div class="diagram-wrap"><svg width="290" height="60" viewBox="0 0 290 60" font-family="'Segoe UI',Arial,sans-serif"><rect x="8" y="8" width="62" height="52" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><circle cx="26" cy="28" r="6" fill="#e65100"/><circle cx="42" cy="28" r="6" fill="#e65100"/><circle cx="58" cy="28" r="6" fill="#e65100"/><circle cx="26" cy="44" r="6" fill="#e65100"/><circle cx="42" cy="44" r="6" fill="#e65100"/><rect x="78" y="8" width="62" height="52" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><circle cx="96" cy="28" r="6" fill="#e65100"/><circle cx="112" cy="28" r="6" fill="#e65100"/><circle cx="128" cy="28" r="6" fill="#e65100"/><circle cx="96" cy="44" r="6" fill="#e65100"/><circle cx="112" cy="44" r="6" fill="#e65100"/><rect x="148" y="8" width="62" height="52" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><circle cx="166" cy="28" r="6" fill="#e65100"/><circle cx="182" cy="28" r="6" fill="#e65100"/><circle cx="198" cy="28" r="6" fill="#e65100"/><circle cx="166" cy="44" r="6" fill="#e65100"/><circle cx="182" cy="44" r="6" fill="#e65100"/><rect x="218" y="8" width="62" height="52" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/><circle cx="236" cy="28" r="6" fill="#e65100"/><circle cx="252" cy="28" r="6" fill="#e65100"/><circle cx="268" cy="28" r="6" fill="#e65100"/><circle cx="236" cy="44" r="6" fill="#e65100"/><circle cx="252" cy="44" r="6" fill="#e65100"/></svg></div><div class="diagram-caption">Equal groups</div>Answer: <span class="blank"></span></li><li class="question"><strong>Minh</strong> finds <strong>10</strong> then <strong>5</strong> more apples. Total? <span class="blank"></span></li><li class="question">There are <strong>4 red</strong> and <strong>7 blue</strong> balloons. Which colour has more? <span class="blank"></span></li><li class="question">A jar has 12 sweets. 8 are eaten. How many left?<div class="mc-options"><span class="mc-opt">A) 0</span><span class="mc-opt">B) 4</span><span class="mc-opt">C) 8</span><span class="mc-opt">D) 2</span></div></li></ol>
+<div class="section-header">⏱ Section 5: Measurement &amp; Time (10 mins)</div>
+<ol class="q-list"><li class="question">How many minutes in 1 hour? <span class="blank"></span></li><li class="question">Start at <strong>12:00</strong>. After <strong>1 hour(s)</strong>, the time is? <span class="blank"></span></li><li class="question">Longer: <strong>6 cm</strong> or <strong>6 cm</strong>? <span class="blank"></span></li><li class="question">Read the thermometer:<br><div class="diagram-wrap"><svg width="55" height="110" viewBox="0 0 55 110"><rect x="22" y="12" width="10" height="70" rx="5" fill="#eee" stroke="#14532d" stroke-width="2"/><circle cx="27" cy="90" r="12" fill="#e8f5e9" stroke="#14532d" stroke-width="2"/><rect x="24" y="55" width="6" height="35" fill="#c0392b"/><text x="42" y="55" font-size="11" fill="#14532d">25°C</text></svg></div><div class="diagram-caption">Thermometer</div>Temperature = <span class="blank"></span> °C</li><li class="question">Perimeter of this rectangle?<br><div class="diagram-wrap"><svg width="60" height="64" viewBox="0 0 60 64" font-family="'Segoe UI',Arial,sans-serif"><rect x="12" y="8" width="36" height="36" fill="#f3e5f5" stroke="#4a148c" stroke-width="2"/><text x="30" y="60" text-anchor="middle" font-size="11" fill="#4a148c">3 cm</text><text x="8" y="26" text-anchor="middle" font-size="11" fill="#4a148c" transform="rotate(-90,8,26)">3 cm</text></svg></div><div class="diagram-caption">Rectangle</div>Perimeter = <span class="blank"></span> cm</li></ol>
+<div class="section-header">⏱ Section 6: Geometry &amp; Data (10 mins)</div>
+<ol class="q-list"><li class="question">Name this shape:<br><div class="diagram-wrap"><svg width="80" height="80" viewBox="0 0 80 80"><polygon points="40,5 75,28 62,70 18,70 5,28" fill="#f3e5f5" stroke="#4a148c" stroke-width="3"/></svg></div><div class="diagram-caption">Pentagon</div><span class="blank"></span></li><li class="question">Lines of symmetry on this <strong>Square</strong>?<br><div class="diagram-wrap"><svg width="80" height="80" viewBox="0 0 80 80"><rect x="10" y="10" width="60" height="60" fill="#f3e5f5" stroke="#4a148c" stroke-width="3"/><line x1="10" y1="40" x2="70" y2="40" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/><line x1="40" y1="10" x2="40" y2="70" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/></svg></div><div class="diagram-caption">Square</div><span class="blank"></span></li><li class="question">Count the shaded squares:<br><div class="diagram-wrap"><svg width="92" height="48" viewBox="0 0 92 48"><rect x="2" y="2" width="20" height="20" fill="#fffde7" stroke="#f57f17" stroke-width="1"/><rect x="24" y="2" width="20" height="20" fill="#f57f17" stroke="#f57f17" stroke-width="1"/><rect x="46" y="2" width="20" height="20" fill="#f57f17" stroke="#f57f17" stroke-width="1"/><rect x="68" y="2" width="20" height="20" fill="#f57f17" stroke="#f57f17" stroke-width="1"/><rect x="2" y="24" width="20" height="20" fill="#f57f17" stroke="#f57f17" stroke-width="1"/><rect x="24" y="24" width="20" height="20" fill="#fffde7" stroke="#f57f17" stroke-width="1"/><rect x="46" y="24" width="20" height="20" fill="#fffde7" stroke="#f57f17" stroke-width="1"/><rect x="68" y="24" width="20" height="20" fill="#f57f17" stroke="#f57f17" stroke-width="1"/></svg></div><div class="diagram-caption">Area grid</div>Shaded = <span class="blank"></span></li><li class="question">Which colour has the most?<br><div class="diagram-wrap"><svg width="222" height="150" viewBox="0 0 222 150" font-family="'Segoe UI',Arial,sans-serif"><line x1="30" y1="20" x2="30" y2="120" stroke="#333" stroke-width="2"/><line x1="30" y1="120" x2="212" y2="120" stroke="#333" stroke-width="2"/><rect x="40" y="69" width="36" height="51" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><text x="58.0" y="63" text-anchor="middle" font-size="11" fill="#4a148c">4</text><text x="58.0" y="136" text-anchor="middle" font-size="11" fill="#333">Red</text><rect x="94" y="95" width="36" height="25" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><text x="112.0" y="89" text-anchor="middle" font-size="11" fill="#4a148c">2</text><text x="112.0" y="136" text-anchor="middle" font-size="11" fill="#333">Blue</text><rect x="148" y="30" width="36" height="90" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/><text x="166.0" y="24" text-anchor="middle" font-size="11" fill="#4a148c">7</text><text x="166.0" y="136" text-anchor="middle" font-size="11" fill="#333">Green</text></svg></div><div class="diagram-caption">Bar graph</div><span class="blank"></span></li><li class="question">A hexagon has 6 sides. &nbsp;<span class="tf-row"><span class="tf-opt">True</span><span class="tf-opt">False</span></span></li></ol>
+<div class="section-header">⏱ Section 7: Fractions — Halves &amp; Quarters (15 mins)</div>
+<ol class="q-list"><li class="question">What fraction is marked on the number line?<br><div class="diagram-wrap"><svg width="280" height="58" viewBox="0 0 280 58" font-family="'Segoe UI',Arial,sans-serif"><line x1="16" y1="28" x2="264" y2="28" stroke="#333" stroke-width="2"/><line x1="20" y1="22" x2="20" y2="34" stroke="#333" stroke-width="1.5"/><text x="20" y="50" text-anchor="middle" font-size="10" fill="#333">0/4</text><line x1="80" y1="22" x2="80" y2="34" stroke="#333" stroke-width="1.5"/><text x="80" y="50" text-anchor="middle" font-size="10" fill="#333">1/4</text><line x1="140" y1="22" x2="140" y2="34" stroke="#333" stroke-width="1.5"/><text x="140" y="50" text-anchor="middle" font-size="10" fill="#333">2/4</text><line x1="200" y1="22" x2="200" y2="34" stroke="#333" stroke-width="1.5"/><text x="200" y="50" text-anchor="middle" font-size="10" fill="#333">3/4</text><line x1="260" y1="22" x2="260" y2="34" stroke="#333" stroke-width="1.5"/><text x="260" y="50" text-anchor="middle" font-size="10" fill="#333">4/4</text><circle cx="200" cy="28" r="6" fill="#c0392b"/></svg></div><div class="diagram-caption">Fraction number line</div><span class="blank"></span></li><li class="question">What fraction of the bar is shaded?<br><div class="diagram-wrap"><svg width="200" height="32" viewBox="0 0 200 32"><rect x="0" y="0" width="50" height="32" fill="#4a148c" stroke="white" stroke-width="1"/><rect x="50" y="0" width="50" height="32" fill="#4a148c" stroke="white" stroke-width="1"/><rect x="100" y="0" width="50" height="32" fill="#f3e5f5" stroke="white" stroke-width="1"/><rect x="150" y="0" width="50" height="32" fill="#f3e5f5" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction bar</div><span class="blank"></span></li><li class="question">What fraction of the circle is shaded?<br><div class="diagram-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><path d="M50,50 L50.0,10.0 A40,40 0 0,1 90.0,50.0 Z" fill="#f57f17" stroke="white" stroke-width="1"/><path d="M50,50 L90.0,50.0 A40,40 0 0,1 50.0,90.0 Z" fill="#f57f17" stroke="white" stroke-width="1"/><path d="M50,50 L50.0,90.0 A40,40 0 0,1 10.0,50.0 Z" fill="#f57f17" stroke="white" stroke-width="1"/><path d="M50,50 L10.0,50.0 A40,40 0 0,1 50.0,10.0 Z" fill="#fffde7" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction circle</div><span class="blank"></span></li><li class="question">What fraction is <em>NOT</em> shaded?<br><div class="diagram-wrap"><svg width="200" height="32" viewBox="0 0 200 32"><rect x="0" y="0" width="100" height="32" fill="#14532d" stroke="white" stroke-width="1"/><rect x="100" y="0" width="100" height="32" fill="#e8f5e9" stroke="white" stroke-width="1"/></svg></div><div class="diagram-caption">Fraction bar</div><span class="blank"></span></li><li class="question">Which is greater: <strong>1/2</strong> or <strong>1/4</strong>? <span class="blank"></span></li></ol>
+<div class="bonus">⭐ Bonus Challenge (5 mins)</div>
+<ol class="q-list"><li class="question">12 + 5 − 4 = <span class="blank"></span></li><li class="question">Find the missing number: 10, 20, 30, ___, 50 → <span class="blank"></span></li><li class="question">Challenge: total squares in the array?<br><div class="diagram-wrap"><svg width="96" height="52" viewBox="0 0 96 52" font-family="'Segoe UI',Arial,sans-serif"><rect x="6" y="6" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="28" y="6" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="50" y="6" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="72" y="6" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="6" y="28" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="28" y="28" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="50" y="28" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/><rect x="72" y="28" width="18" height="18" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/></svg></div><div class="diagram-caption">2×4</div><span class="blank"></span></li></ol>
+
+
+<hr class="before-answer">
 <div class="answer-section">
-<div class="answer-header">✅ Answer Key — Lesson 94 (Grade 1, 90 Minute Test)</div>
-<table class="answer-key"><tr><th>#</th><th>Answer</th><th>#</th><th>Answer</th><th>#</th><th>Answer</th></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 1: Counting &amp; Number Recognition</td></tr>
-<tr><td>1</td><td>C) 14</td><td>2</td><td>C) 19</td><td>3</td><td>A) 36</td></tr>
-<tr><td>4</td><td>A) 30</td><td>5</td><td>A) four</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 2: Addition</td></tr>
-<tr><td>1</td><td>True</td><td>2</td><td>False</td><td>3</td><td>True</td></tr>
-<tr><td>4</td><td>False</td><td>5</td><td>True</td><td>6</td><td>True</td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 3: Subtraction</td></tr>
-<tr><td>1</td><td>2</td><td>2</td><td>17</td><td>3</td><td>4</td></tr>
-<tr><td>4</td><td>11</td><td>5</td><td>5</td><td>6</td><td>4</td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 4: Multiplication</td></tr>
-<tr><td>1</td><td>D) 30</td><td>2</td><td>C) 35</td><td>3</td><td>B) 30</td></tr>
-<tr><td>4</td><td>D) 24</td><td>5</td><td>D) 35</td><td>6</td><td>3, 6</td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 5: Word Problems</td></tr>
-<tr><td>1</td><td>32 chairs</td><td>2</td><td>6 pencils</td><td>3</td><td>35 butterflies</td></tr>
-<tr><td>4</td><td>6 flowers</td><td>5</td><td>23 cupcakes</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 6: Place Value</td></tr>
-<tr><td>1</td><td>3 tens, 0 ones</td><td>2</td><td>3 tens, 2 ones</td><td>3</td><td>3 tens, 5 ones</td></tr>
-<tr><td>4</td><td>21</td><td>5</td><td>53</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Section 7: Number Patterns</td></tr>
-<tr><td>1</td><td>8</td><td>2</td><td>9</td><td>3</td><td>13</td></tr>
-<tr><td>4</td><td>20</td><td>5</td><td>11</td><td></td><td></td></tr>
-<tr><td colspan="6" style="background:#dce8f5;font-weight:bold;text-align:left;padding-left:12px;">Bonus Challenge</td></tr>
-<tr><td>1</td><td>22</td><td>2</td><td>5</td><td>3</td><td>5</td></tr>
-</table>
+  <div class="answer-header">✅ Answer Key — Lesson 94</div>
+  <table class="answer-key">
+    <thead><tr><th>Section</th><th>Q#</th><th>Answer</th></tr></thead>
+    <tbody><tr><td>S1</td><td>1</td><td style="text-align:left">9 tens, 7 ones</td></tr>
+<tr><td>S1</td><td>2</td><td style="text-align:left">18</td></tr>
+<tr><td>S1</td><td>3</td><td style="text-align:left">1/4</td></tr>
+<tr><td>S1</td><td>4</td><td style="text-align:left">3:00</td></tr>
+<tr><td>S1</td><td>5</td><td style="text-align:left">Rectangle</td></tr>
+<tr><td>S2</td><td>1</td><td style="text-align:left">6 tens, 8 ones</td></tr>
+<tr><td>S2</td><td>2</td><td style="text-align:left">15</td></tr>
+<tr><td>S2</td><td>3</td><td style="text-align:left">1/4</td></tr>
+<tr><td>S2</td><td>4</td><td style="text-align:left">5:00</td></tr>
+<tr><td>S2</td><td>5</td><td style="text-align:left">Rectangle</td></tr>
+<tr><td>S3</td><td>1</td><td style="text-align:left">4 + 4 = 8</td></tr>
+<tr><td>S3</td><td>2</td><td style="text-align:left">10</td></tr>
+<tr><td>S3</td><td>3</td><td style="text-align:left">30</td></tr>
+<tr><td>S3</td><td>4</td><td style="text-align:left">50</td></tr>
+<tr><td>S3</td><td>5</td><td style="text-align:left">1</td></tr>
+<tr><td>S4</td><td>1</td><td style="text-align:left">15</td></tr>
+<tr><td>S4</td><td>2</td><td style="text-align:left">20</td></tr>
+<tr><td>S4</td><td>3</td><td style="text-align:left">15</td></tr>
+<tr><td>S4</td><td>4</td><td style="text-align:left">blue</td></tr>
+<tr><td>S4</td><td>5</td><td style="text-align:left">B) 4</td></tr>
+<tr><td>S5</td><td>1</td><td style="text-align:left">60</td></tr>
+<tr><td>S5</td><td>2</td><td style="text-align:left">13:00</td></tr>
+<tr><td>S5</td><td>3</td><td style="text-align:left">equal</td></tr>
+<tr><td>S5</td><td>4</td><td style="text-align:left">25 °C</td></tr>
+<tr><td>S5</td><td>5</td><td style="text-align:left">12 cm</td></tr>
+<tr><td>S6</td><td>1</td><td style="text-align:left">Pentagon</td></tr>
+<tr><td>S6</td><td>2</td><td style="text-align:left">4</td></tr>
+<tr><td>S6</td><td>3</td><td style="text-align:left">5</td></tr>
+<tr><td>S6</td><td>4</td><td style="text-align:left">Green</td></tr>
+<tr><td>S6</td><td>5</td><td style="text-align:left">True</td></tr>
+<tr><td>S2</td><td>1</td><td style="text-align:left">3/4</td></tr>
+<tr><td>S2</td><td>2</td><td style="text-align:left">2/4</td></tr>
+<tr><td>S2</td><td>3</td><td style="text-align:left">3/4</td></tr>
+<tr><td>S2</td><td>4</td><td style="text-align:left">1/2</td></tr>
+<tr><td>S2</td><td>5</td><td style="text-align:left">1/2</td></tr>
+<tr><td>Bonus</td><td>B1</td><td style="text-align:left">13</td></tr>
+<tr><td>Bonus</td><td>B2</td><td style="text-align:left">40</td></tr>
+<tr><td>Bonus</td><td>B3</td><td style="text-align:left">8</td></tr>
+</tbody>
+  </table>
 </div>
+
 </body>
 </html>
