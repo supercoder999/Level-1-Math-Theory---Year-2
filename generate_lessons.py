@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate Grade 1 Math Theory – Lessons 1 to 100 (Year 1).
+Generate Grade 1 Math Theory – Lessons 1 to 100 (Year 2).
 Structure mirrors Year 2/Year 3: 7 sections + bonus + answer key, with
 deterministic SVG diagrams and cross-lesson diversity (no repeated diagram types).
 
@@ -98,7 +98,7 @@ LESSONS = {
     75: ("Arrays Intro", "Arrays | 90-Minute Lesson"),
     76: ("Repeated Addition", "Repeated Addition | 90-Minute Lesson"),
     77: ("Sharing Equally", "Sharing | 90-Minute Lesson"),
-    78: ("Early × Facts (2,5,10)", "Early × Facts | 90-Minute Lesson"),
+    78: ("Skip Count 2, 5, 10", "Skip Count 2, 5, 10 | 90-Minute Lesson"),
     79: ("Equal Groups Practice", "Equal Groups Practice | 90-Minute Lesson"),
     80: ("Skip Count & Groups Review", "Groups Review | 90-Minute Lesson"),
     # 81–90 Patterns & Data
@@ -766,24 +766,23 @@ def sec_topic(n, rng, which):
         add(f'A <strong>hexagon</strong> has how many sides? <span class="blank"></span>', "6")
 
     elif block == "groups":
-        rows, cols = rng.randint(2, 3), rng.randint(2, 5)
-        add(f'How many squares are in this array? <span class="blank"></span>',
-            str(rows * cols), svg_array(rows, cols, rng), f"{rows} × {cols} array", "array")
+        filled = rng.randint(4, 10)
+        add(f'How many counters? <span class="blank"></span>',
+            str(filled), svg_ten_frame(filled), "Ten-frame", "tenframe")
         g, p = rng.randint(2, 4), rng.randint(2, 5)
-        add(f'<strong>{g}</strong> equal groups with <strong>{p}</strong> in each. Total? '
+        add(f'<strong>{g}</strong> boxes with <strong>{p}</strong> in each. How many in all? '
             f'<span class="blank"></span>',
-            str(g * p), svg_equal_groups(g, p, rng), f"{g} groups of {p}", "groups")
+            str(g * p), svg_equal_groups(g, p, rng), f"{g} boxes of {p}", "boxes")
         skip = rng.choice([2, 5, 10])
         start = skip
         seq = [start + i * skip for i in range(5)]
         add(f'Count by {skip}s: {", ".join(map(str, seq[:4]))}, <span class="blank"></span>',
             str(seq[4]))
-        a = rng.choice([2, 5, 10]); b = rng.randint(2, 5)
-        add(f'{a} + {a} + {a} = <span class="blank"></span> &nbsp;(repeated addition)',
+        a = rng.choice([2, 5, 10])
+        add(f'{a} + {a} + {a} = <span class="blank"></span>',
             str(a + a + a))
-        # sharing
-        total = rng.choice([8, 10, 12, 15]); share = rng.choice([d for d in (2, 3, 5) if total % d == 0])
-        add(f'Share <strong>{total}</strong> equally among <strong>{share}</strong> friends. Each gets? '
+        total = rng.choice([8, 10, 12]); share = rng.choice([d for d in (2, 4) if total % d == 0])
+        add(f'Put <strong>{total}</strong> into <strong>{share}</strong> equal piles. Each pile has? '
             f'<span class="blank"></span>', str(total // share))
 
     elif block == "data":
@@ -854,28 +853,25 @@ def sec_addsub(n, rng):
     answers = []
     hi = max_num(n)
     if n >= 71:
-        rows, cols = rng.randint(2, 3), rng.randint(2, 5)
-        html += q_li(f'Write a repeated-addition fact for this array. '
-                     f'<span class="blank"></span> + <span class="blank"></span> + … = <span class="blank"></span><br>'
-                     + diagram(svg_array(rows, cols, rng), f"{rows} rows of {cols}"))
-        answers.append(("1", f"{' + '.join([str(cols)]*rows)} = {rows*cols}"))
         g, p = rng.randint(2, 4), rng.randint(2, 5)
-        html += q_li(f'{g} groups of {p} = <span class="blank"></span><br>'
-                     + diagram(svg_equal_groups(g, p, rng), f"{g} groups of {p}"))
-        answers.append(("2", str(g * p)))
+        html += q_li(f'{g} boxes with {p} in each. How many in all? <span class="blank"></span><br>'
+                     + diagram(svg_equal_groups(g, p, rng), f"{g} boxes of {p}"))
+        answers.append(("1", str(g * p)))
+        html += q_li(f'{p} + {p} + {p} = <span class="blank"></span>')
+        answers.append(("2", str(p * 3)))
         skip = rng.choice([2, 5, 10])
         seq = [skip * i for i in range(1, 6)]
         html += q_li(f'Count by {skip}s: {seq[0]}, {seq[1]}, ___, {seq[3]}, {seq[4]} → '
                      f'<span class="blank"></span>')
         answers.append(("3", str(seq[2])))
-        a = rng.choice([2, 5, 10]); b = rng.randint(2, mul_max(n))
-        html += q_li(f'{a} × {b} = <span class="blank"></span>')
-        answers.append(("4", str(a * b)))
-        total = rng.choice([10, 12, 15, 20]); share = rng.choice([d for d in (2, 5, 10) if total % d == 0])
-        html += q_li(f'{total} ÷ {share} = <span class="blank"></span>')
-        answers.append(("5", str(total // share)))
+        a = rng.choice([2, 5, 10])
+        html += q_li(f'{a} + {a} = <span class="blank"></span>')
+        answers.append(("4", str(a + a)))
+        total = rng.choice([10, 12, 8])
+        html += q_li(f'Put {total} into 2 piles the same size. Each pile has? <span class="blank"></span>')
+        answers.append(("5", str(total // 2)))
         html += '</ol>'
-        return "Section 3: Equal Groups &amp; Skip Counting (15 mins)", html, answers
+        return "Section 3: Groups &amp; Skip Counting (15 mins)", html, answers
 
     # Grade 1 add/sub focus
     a = rng.randint(3, min(12, hi // 2 + 4))
@@ -913,7 +909,7 @@ def sec_word(n, rng):
     if n >= 71:
         g, p = rng.randint(2, 4), rng.randint(2, 5)
         html += q_li(f'<strong>{g} boxes</strong> each hold <strong>{p} {thing}</strong>. Total?<br>'
-                     + diagram(svg_equal_groups(g, p, rng), "Equal groups")
+                     + diagram(svg_equal_groups(g, p, rng), "Same-size boxes")
                      + f'Answer: <span class="blank"></span>')
         answers.append(("2", str(g * p)))
     else:
@@ -1003,10 +999,13 @@ def sec_measure(n, rng):
         answers.append(("4", f"{temp} °C"))
 
     w, h = rng.randint(2, 6), rng.randint(2, 5)
-    html += q_li(f'Perimeter of this rectangle?<br>'
-                 + diagram(svg_rect(w, h, rng), "Rectangle")
-                 + 'Perimeter = <span class="blank"></span> cm')
-    answers.append(("5", f"{2*(w+h)} cm"))
+    longer = f"{w} cm" if w != h else "equal"
+    if w < h:
+        longer = f"{h} cm"
+    html += q_li(f'Which is longer: <strong>{w} cm</strong> or <strong>{h} cm</strong>?<br>'
+                 + diagram(svg_rect(w, h, rng), "Compare lengths")
+                 + '<span class="blank"></span>')
+    answers.append(("5", longer))
     html += '</ol>'
     return "Section 5: Measurement &amp; Time (10 mins)", html, answers
 
@@ -1047,9 +1046,9 @@ def sec_geo_data(n, rng):
     if geo_ask != "grid":
         cols, rows = rng.randint(2, 4), rng.randint(2, 3)
         shaded = set(rng.sample(range(cols * rows), rng.randint(2, cols * rows - 1)))
-        html += q_li(f'Count the shaded squares:<br>'
-                     + diagram(svg_grid_area(cols, rows, shaded, rng), "Area grid")
-                     + 'Shaded = <span class="blank"></span>')
+        html += q_li(f'How many coloured squares?<br>'
+                     + diagram(svg_grid_area(cols, rows, shaded, rng), "Colour grid")
+                     + 'Coloured = <span class="blank"></span>')
         answers.append(("3", str(len(shaded))))
     else:
         facts = [
@@ -1159,11 +1158,11 @@ def sec_bonus(n, rng):
     html += q_li(f'Find the missing number: {seq[0]}, {seq[1]}, {seq[2]}, ___, {seq[4]} → '
                  f'<span class="blank"></span>')
     answers.append(("B2", str(seq[3])))
-    rows, cols = 2, rng.randint(3, 5)
-    html += q_li(f'Challenge: total squares in the array?<br>'
-                 + diagram(svg_array(rows, cols, rng), f"{rows}×{cols}")
+    filled = rng.randint(4, 10)
+    html += q_li(f'Challenge: how many counters?<br>'
+                 + diagram(svg_ten_frame(filled), "Ten-frame")
                  + '<span class="blank"></span>')
-    answers.append(("B3", str(rows * cols)))
+    answers.append(("B3", str(filled)))
     html += '</ol>'
     return "Bonus Challenge (5 mins)", html, answers
 
@@ -1224,7 +1223,7 @@ def build_lesson(n, rng):
 </head>
 <body>
   <h1>🧠 Grade 1 Math Theory – Lesson {n}</h1>
-  <div class="meta">{subtitle} &nbsp;|&nbsp; Level: Year 1</div>
+  <div class="meta">{subtitle} &nbsp;|&nbsp; Level: Year 2</div>
   <div class="name-line">
     <span>Name:</span><span class="line"></span>
     <span>Date:</span><span class="line"></span>
